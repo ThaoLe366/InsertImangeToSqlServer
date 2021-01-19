@@ -1,0 +1,10 @@
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\bin\Debug\GetImageForProduct.exe.config
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\bin\Debug\GetImageForProduct.exe
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\bin\Debug\GetImageForProduct.pdb
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\obj\Debug\GetImageForProduct.csprojAssemblyReference.cache
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\obj\Debug\GetImageForProduct.Form1.resources
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\obj\Debug\GetImageForProduct.Properties.Resources.resources
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\obj\Debug\GetImageForProduct.csproj.GenerateResource.cache
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\obj\Debug\GetImageForProduct.csproj.CoreCompileInputs.cache
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\obj\Debug\GetImageForProduct.exe
+E:\Academy\Commerce\GetImageForProduct\GetImageForProduct\obj\Debug\GetImageForProduct.pdb
