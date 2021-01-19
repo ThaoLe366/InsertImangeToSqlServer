@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,38 @@ namespace GetImageForProduct
             InitializeComponent();
             conn = new SqlConnection(ConnStr);
             cmd = conn.CreateCommand();
+
+
+            for(int i=0; i< 27; i++)
+            {
+                for (int j = 1; j <= 3; j++)
+                {
+                    Image img = Image.FromFile(Path.GetFullPath(@"..\..\MyImages\img") + (i*3 +j)+".png");
+                    byte[] arr;
+                    ImageConverter converter = new ImageConverter();
+                    arr = (byte[])converter.ConvertTo(img, typeof(byte[]));
+
+
+
+                    using (SqlConnection openCon = new SqlConnection(ConnStr))
+                    {
+                        string saveStaff = "INSERT into PhotoProduct(idProduct, photo) values (@idProduct, @image)";
+
+                        using (SqlCommand querySaveStaff = new SqlCommand(saveStaff))
+                        {
+                            querySaveStaff.Connection = openCon;
+                            querySaveStaff.Parameters.AddWithValue("@idProduct", i+1);
+                            querySaveStaff.Parameters.AddWithValue("@image", arr);
+
+                            openCon.Open();
+
+                            querySaveStaff.ExecuteNonQuery();
+                        }
+                    }
+                }
+                   
+            }
+
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)

@@ -107,7 +107,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(794, 458);
             this.Controls.Add(this.pictureBox);
             this.Controls.Add(this.dtgvListProduct);
             this.Controls.Add(this.btnSave);
